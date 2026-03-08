@@ -1,0 +1,1 @@
+This folder stores configuration files used for server hardening such as SSH configuration, firewall rules, Nginx configuration, and Fail2Ban settings.
