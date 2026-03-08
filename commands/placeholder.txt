@@ -1,0 +1,1 @@
+This folder contains all Linux, SSH, firewall, Nginx, and Fail2Ban commands used in this project.
