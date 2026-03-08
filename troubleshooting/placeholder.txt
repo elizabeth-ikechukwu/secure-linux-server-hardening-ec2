@@ -1,0 +1,1 @@
+This folder documents troubleshooting steps, common issues, and solutions encountered during the Secure linux Server Hardening Project.
