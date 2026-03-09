@@ -1,10 +1,11 @@
+
 # Secure Linux Server Hardening and Static Website Deployment on AWS EC2
 
 This project demonstrates how to deploy and secure a production-ready Linux web server on AWS EC2.
 
-It covers infrastructure setup, system hardening, firewall configuration, intrusion protection, domain mapping, and HTTPS encryption.
+It covers infrastructure provisioning, Linux server hardening, firewall configuration, intrusion protection, domain mapping, and HTTPS encryption using Let's Encrypt.
 
-The objective of this project is to demonstrate practical Linux administration, cloud infrastructure deployment, and server security practices used by DevOps and Cloud Engineers.
+The goal of this project is to showcase practical skills in Linux administration, cloud infrastructure deployment, and server security practices used by DevOps and Cloud Engineers.
 
 ---
 
@@ -17,7 +18,7 @@ https://lizzycloudlab.online
 
 ## Project Overview
 
-In this project, a Linux web server was built and secured from scratch on AWS EC2. A personal portfolio website was deployed and made accessible through a custom domain with HTTPS encryption.
+In this project, a Linux web server was provisioned and secured from scratch on AWS EC2. A personal portfolio website was deployed and made accessible through a custom domain with HTTPS encryption.
 
 Security best practices implemented include:
 
@@ -27,9 +28,7 @@ Security best practices implemented include:
 - Intrusion protection
 - HTTPS encryption with Let's Encrypt
 
-This project simulates real tasks performed by DevOps Engineers, Cloud Engineers, and Linux System Administrators.
-
----
+This project reflects real-world tasks commonly performed by DevOps Engineers, Cloud Engineers, and Linux System Administrators.
 
 ## Architecture
 
@@ -55,28 +54,27 @@ Static Portfolio Website
 ## Technologies Used
 
 ### Cloud Platform
-AWS EC2
+- AWS EC2
 
 ### Operating System
-Ubuntu Linux
+- Ubuntu Linux
 
 ### Web Server
-Nginx
+- Nginx
 
 ### Security
-SSH Key Authentication  
-UFW Firewall  
-Fail2Ban Intrusion Prevention  
-Let's Encrypt SSL
+- SSH Key Authentication
+- UFW Firewall
+- Fail2Ban Intrusion Prevention
+- Let's Encrypt SSL
 
 ### Networking
-Domain DNS mapping (Hostinger)
+- Domain DNS mapping (Hostinger)
 
 ### Tools
-Linux CLI  
-Nano  
-Certbot
-
+- Linux CLI
+- Nano
+- Certbot
 ---
 ## Implementation Steps
 
@@ -256,7 +254,23 @@ sudo certbot renew --dry-run
 These configurations significantly improve server security and align with modern cloud security practices.
 
 ---
+## Lessons Learned
 
+- Importance of securing Linux servers before exposing them to the internet.
+- Practical experience with SSH hardening and key-based authentication.
+- Understanding how firewall rules can affect server accessibility.
+- Hands-on experience configuring HTTPS using Let's Encrypt and Certbot.
+- Learning how DNS resolution connects a domain name to cloud infrastructure.
+  
+## Troubleshooting Issues
+
+During deployment several issues were encountered and resolved:
+
+- SSH connection issues caused by incorrect key permissions.
+- Temporary lockout after changing the SSH port before updating firewall rules.
+- DNS propagation delay after mapping the domain to the EC2 public IP.
+- Initial HTTPS configuration issues before correctly running Certbot with Nginx.
+  
 ## Project Screenshots
 
 Screenshots demonstrating the deployment process, server configuration, and security setup are available in the `screenshots` directory of this repository.
