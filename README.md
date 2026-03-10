@@ -36,8 +36,6 @@ This diagram illustrates how the static portfolio website is served through **Ng
 
 ![AWS Architecture](docs/aws-ec2-nginx-architecture-diagram.png)
 
-
-![AWS Architecture](docs/aws-ec2-nginx-architecture-diagram.png)
 ---
 
 ## Technologies Used
