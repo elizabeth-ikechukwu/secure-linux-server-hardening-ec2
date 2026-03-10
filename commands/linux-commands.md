@@ -1,31 +1,49 @@
  # Linux Commands Used in This Project
 
-This file documents the Linux commands used during the setup and hardening of the AWS EC2 server.
-
-## Commands Used
+## Update System
 
 ```bash
-# Update system packages
 sudo apt update && sudo apt upgrade -y
+```
 
-# Install Nginx web server
+## Install Nginx
+
+```bash
 sudo apt install nginx -y
+```
 
-# Start Nginx service
+## Start Nginx
+
+```bash
 sudo systemctl start nginx
+```
 
-# Enable Nginx to start on boot
+## Enable Nginx
+
+```bash
 sudo systemctl enable nginx
+```
 
-# Check Nginx service status
+## Check Nginx Status
+
+```bash
 sudo systemctl status nginx
+```
 
-# Check open ports on the server
+## Check Open Ports
+
+```bash
 sudo ss -tulnp
+```
 
-# Check firewall status
+## Check Firewall Status
+
+```bash
 sudo ufw status
+```
 
-# Check Fail2Ban service status
+## Check Fail2Ban Status
+
+```bash
 sudo systemctl status fail2ban
 ```
