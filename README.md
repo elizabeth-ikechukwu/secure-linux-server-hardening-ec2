@@ -260,9 +260,25 @@ During deployment several issues were encountered and resolved:
 - DNS propagation delay after mapping the domain to the EC2 public IP.
 - Initial HTTPS configuration issues before correctly running Certbot with Nginx.
   
-## Project Screenshots
+ ## Project Screenshots
 
-Screenshots demonstrating the deployment process, server configuration, and security setup are available in the `screenshots` directory of this repository.
+### EC2 Instance Running
+![EC2](docs/screenshots/ec2-instance-running.png)
+
+### SSH Login
+![SSH](docs/screenshots/ssh-login.png)
+
+### Nginx Running
+![Nginx](docs/screenshots/nginx-running.png)
+
+### Firewall Status
+![UFW](docs/screenshots/ufw-status.png)
+
+### Fail2Ban Protection
+![Fail2Ban](docs/screenshots/fail2ban-status.png)
+
+### Live Website (HTTPS)
+![Website](docs/screenshots/https-live-site.png)
 ---
 
 ## Skills Demonstrated
@@ -275,6 +291,10 @@ Screenshots demonstrating the deployment process, server configuration, and secu
 - HTTPS encryption
 - Infrastructure troubleshooting
 
+## Cost Note
+
+This project was deployed using AWS Free Tier resources.  
+The EC2 instance was **terminated after testing and documentation** to avoid unnecessary charges.
 ---
 
 ## Author
