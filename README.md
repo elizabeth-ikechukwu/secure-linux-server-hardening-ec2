@@ -30,25 +30,9 @@ Security best practices implemented include:
 
 This project reflects real-world tasks commonly performed by DevOps Engineers, Cloud Engineers, and Linux System Administrators.
 
-## Architecture
+## Architecture Diagram
 
-```
-User Browser
-     │
-     │ HTTPS (443)
-     ▼
-Custom Domain (Hostinger DNS)
-     │
-     ▼
-AWS EC2 Instance (Ubuntu Linux)
-     │
-     ▼
-Nginx Web Server
-     │
-     ▼
-Static Portfolio Website
-```
-
+![AWS Architecture](docs/aws-ec2-nginx-architecture-diagram.png)
 ---
 
 ## Technologies Used
