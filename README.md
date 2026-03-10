@@ -32,6 +32,11 @@ This project reflects real-world tasks commonly performed by DevOps Engineers, C
 
 ## Architecture Diagram
 
+This diagram illustrates how the static portfolio website is served through **Nginx on an AWS EC2 instance**, using a **custom domain configured via Hostinger DNS**. It shows the flow of traffic from the user’s browser through the internet to the EC2 server where the website is hosted.
+
+![AWS Architecture](docs/aws-ec2-nginx-architecture-diagram.png)
+
+
 ![AWS Architecture](docs/aws-ec2-nginx-architecture-diagram.png)
 ---
 
